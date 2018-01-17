@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/rlv_sdv"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/rlv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="TextView"
+        android:layout_toRightOf="@+id/rlv_sdv"/>
+    <TextView
+        android:id="@+id/rlv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlv_price"
+        android:text="标题"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/rlv_sdv"/>
+
+</RelativeLayout>

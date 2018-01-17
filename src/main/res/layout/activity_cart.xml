@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:background="#f9731a"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="购物车"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:id="@+id/tv_bj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="编辑"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="23dp"
+            android:layout_marginEnd="23dp" />
+    </RelativeLayout>
+    <!--购物车的二级列表-->
+    <ExpandableListView
+        android:layout_above="@+id/linear_layout"
+        android:layout_below="@+id/rl_title"
+        android:id="@+id/expanable_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ExpandableListView>
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/check_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/text_total"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="合计:¥0.00" />
+
+        <TextView
+            android:id="@+id/text_buy"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ff0000"
+            android:gravity="center"
+            android:text="去结算(0)"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+</RelativeLayout>

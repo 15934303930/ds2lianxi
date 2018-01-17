@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AddDeleteView">
+        <attr name="left_item" format="string"></attr>
+        <attr name="right_item" format="string"></attr>
+        <attr name="middle_item" format="string"></attr>
+    </declare-styleable>
+</resources>
